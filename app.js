@@ -7,6 +7,7 @@ var app    = express();
 var standardGreeting = 'Hello World!';
 
 app.get('/', function(req, res){
+  console.log('request from '+req.ip);
   res.send(standardGreeting);
 });
 
